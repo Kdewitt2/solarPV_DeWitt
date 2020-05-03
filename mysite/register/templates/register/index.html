@@ -1,0 +1,63 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'register/style.css' %}">
+
+    <header>        
+        <title>
+            SolarPV Dashboard 
+        </title>
+    </header>
+
+<!------------>
+<!--Nav Bar-->
+<!------------>
+    <div class="container">
+       <div class="container">
+           <img src="/images/solarPvLogo.png" href="../main">          
+       </div> 
+        <nav>
+            <ul>
+                <li><a href = "../main">Main</a></li>
+                <li><a>Racks & Trackers</a></li>
+                <li><a>PV Module</a></li>
+                <li><a>PV Systems</a></li>
+                <li><a>Data Analytics</a></li>
+                <li><a>Cybersecurity</a></li>
+                <li><a href ="../dashboard"> Dashboard</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<!---------------------->
+<!--Registration Form-->
+<!---------------------->
+<section>
+<body>
+    <div id="container">
+        <div id="main">
+            <form>
+            <h1>User information</h1> <br>
+            <input type="text" name="userEmail" placeholder="Email" required><br>
+            <input type="text" name="userPass" placeholder="password" required><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
+</body>
+</section>
+
+<!---------->
+<!--FOOTER-->
+<!---------->
+<section>
+    <div class="container">
+        <footer id="footer">
+            <p><b>SolarPV</b></p>
+            <p>Address, Phone, Email, Website</p> 
+            <p><a>Site Map</a> | <a>Terms & Conditions</a> | <a>Privacy Policy</a> | <a>About Us</a></p>
+            <p style="align-content: right;">@ 2020 All Rights Reserved</p>
+        </footer>
+    </div>
+</section>
+
+</html>

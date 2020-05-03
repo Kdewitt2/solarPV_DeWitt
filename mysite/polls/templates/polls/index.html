@@ -1,0 +1,86 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>    
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+    <section>
+    <header>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+        
+        <title>
+            solarPV R&D
+        </title>
+    </header>
+
+    <body>
+    <div class="container">
+       <div class="container">
+           <img src="./solarPvLogo.png">
+           
+       </div> 
+        <nav>
+            <ul>
+                <li><a>Racks & Trackers</a></li>
+                <li><a>PV Module</a></li>
+                <li><a>PV Systems</a></li>
+                <li><a>Data Analytics</a></li>
+                <li><a>Cybersecurity</a></li>
+                <li><a href ="./RegistrationDashboard.html"> Registration Dashboard</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="leftNav"> 
+                    <h1> <a href="./RegistrationForm.html">Register</a> | <a>Login</a> </h1>
+            <h2>PV Module</h2>
+            <ul>
+                <li>Testing & Certification</li>
+                <li>PV Rating</li>
+            </ul>
+            <h2>PV System Performance</h2>
+            <ul>
+                <li>Monitoring & Inspection</li>
+                <li>Performance Analysis</li>
+                <li>Compare system</li>
+                <li>Certification</li>
+            </ul>
+            <h2>Data Analytics</h2>
+            <ul>
+                <li>Module lifetime prediction</li>
+                <li>Energy Prediction</li>
+            </ul>
+            <h2>Cybersecurity and Smart Grid Technologies</h2>
+            <h2>Solar PV University</h2>
+
+        </div>
+        <div class="main">
+            <p><i>Feature Contents</i></p>
+        </div>
+        <div class="rightNav">
+            <h1>News & Events</h1>
+            <p>PhotoVoltaic Technical Conference to take place in Marseille, France from 26 to 28 April 2017</p>
+            <p>Trump is next US president</p>
+            <p>Syrian forces recapture Aleppo</p>
+            <p>Senate votes on SCOTUS nominee</p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p><b>SolarPV</b></p>
+        <p>Address, Phone, Email, Website</p> 
+        <p><a>Site Map</a> | <a>Terms & Conditions</a> | <a>Privacy Policy</a> | <a>About Us</a></p>
+        <p style="align-content: right;">@ 2019 All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</section>
