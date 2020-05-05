@@ -1,0 +1,172 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard/style.css' %}">
+
+    <header>        
+        <title>
+            SolarPV Dashboard 
+        </title>
+    </header>
+
+<!------------>
+<!--Nav Bar-->
+<!------------>
+    <div class="container">
+       <div class="container">
+           <img src="/images/solarPvLogo.png" href="../main">          
+       </div> 
+        <nav>
+            <ul>
+                <li><a href = "../main">Main</a></li>
+                <li><a>Racks & Trackers</a></li>
+                <li><a>PV Module</a></li>
+                <li><a>PV Systems</a></li>
+                <li><a>Data Analytics</a></li>
+                <li><a>Cybersecurity</a></li>
+                <li><a href ="../dashboard"> Dashboard</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<!------------------>
+<!--Links to Forms-->
+<!------------------>
+<section>
+<body>
+    <div id="container">
+        <div id="main">
+        <nav>
+            <ul>
+                <li><a href = "/clientForm">Client</a></li>
+                <li><a href = "/productForm">Product</a></li>
+                <li><a href = "/locationForm">Location</a></li>
+                <li><a href = "/testStandard">TestStandard</a></li>
+                <li><a href = "/certificate">Certificate</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+</body>
+</section>
+<!------------------>
+<!--Location Form-->
+<!------------------>
+<!--
+<section>
+<body>
+    <div id="container">    
+        <div id="main">
+            <form>
+                <h1>Location information</h1> <br>
+                <input type="text" name="clientID" placeholder="ClientID" required><br>
+                <input type="text" name="address1" placeholder="Address1" required><br>
+                <input type="text" name="address2" placeholder="Address2"><br>
+                <input type="text" name="city" placeholder="City"><br>
+                <input type="text" name="state" placeholder="State"><br>
+                <input type="text" name="postalCode" placeholder="Zip Code"><br>
+                <input type="text" name="country" placeholder="Country"><br>
+                <input type="text" name="phoneNumber" placeholder="Phone Number"><br>
+                <input type="text" name="faxNumber" placeholder="Fax Number"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</section>
+
+<!---------------->
+<!--Product Form-->
+<!----------------
+<section>
+<body>
+    <div id="container">    
+        <div id="main">
+            <form>
+                <h1>Product information</h1> <br>
+                <input type="text" name="modelNum" placeholder="Model Number" required><br>
+                <input type="text" name="prodName" placeholder="Name" required><br>
+                <input type="text" name="cellTechnology" placeholder="Cell Technology"><br>
+                <input type="text" name="cellManufacturer" placeholder="Cell Manufacturer"><br>
+                <input type="text" name="numberOfCells" placeholder="Number of Cells"><br>
+                <input type="text" name="numberCellsSeries" placeholder="Number of Cells in Series"><br>
+                <input type="text" name="numberSeriesStr" placeholder="Number of Series of Strings"><br>
+                <input type="text" name="numberDiodes" placeholder="Number of Diodes"><br>
+                <input type="text" name="productLength" placeholder="Product Length"><br>
+                <input type="text" name="productWidth" placeholder="Product Width"><br>
+                <input type="text" name="superstrateType" placeholder="Superstrate Type"><br>
+                <input type="text" name="superstrateManufacturer" placeholder="Superstrate Manufacturer"><br>
+                <input type="text" name="substrateType" placeholder="Substrate Type"><br>
+                <input type="text" name="SubstrateManufacturer" placeholder="Substrate Manufacturer"><br>
+                <input type="text" name="frameType" placeholder="Frame Type"><br>
+                <input type="text" name="frameAdhesive" placeholder="Frame Adhesive"><br>
+                <input type="text" name="encapsulantType" placeholder="Encapsulant Type"><br>
+                <input type="text" name="encapsulantManufacturer" placeholder="Encapsulant Manufacturer"><br>
+                <input type="text" name="junctionBoxType" placeholder="Junction Box Type"><br>
+                <input type="text" name="junctionBoxManufacturer" placeholder="Junction Box Manufacturer"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</section>
+
+<!---------------------->
+<!--Test Standard Form-->
+<!----------------------
+<section>
+<body>
+    <div id="container">
+        <div id="main">
+            <form>
+                <h1>Test Standard information</h1> <br>
+                <input type="text" name="testStandardID" placeholder="Test Standard ID" required><br>
+                <input type="text" name="testStandardName" placeholder="Name" required><br>
+                <input type="text" name="testStandardDesc" placeholder="Description" required><br>
+                <input type="text" name="testStandardPubDate" placeholder="Published Date" required><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</section>
+
+<!-------------------->
+<!--Certificate Form-->
+<!--------------------
+<section>
+<body>
+    <div id="container">
+        <div id="main">
+            <form>
+                <h1>Certificate information</h1> <br>
+                <input type="text" name="certID" placeholder="Certificate ID" required><br>
+                <input type="text" name="certNumber" placeholder="Certificate Number" required><br>
+                <input type="text" name="locationID" placeholder="Location id" required><br>
+                <input type="text" name="reportNumber" placeholder="Report number" required><br>
+                <input type="text" name="contactID" placeholder="Contact ID" required><br>
+                <input type="text" name="testStandardID" placeholder="Test Standdard ID" required><br>
+                <input type="text" name="productID" placeholder="Product ID" required><br>
+                <input type="text" name="certIssueDate" placeholder="Certificate Issue Date" required><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</section>
+//-->
+<!---------->
+<!--FOOTER-->
+<!---------->
+<section>
+    <div class="container">
+        <footer id="footer">
+            <p><b>SolarPV</b></p>
+            <p>Address, Phone, Email, Website</p> 
+            <p><a>Site Map</a> | <a>Terms & Conditions</a> | <a>Privacy Policy</a> | <a>About Us</a></p>
+            <p style="align-content: right;">@ 2020 All Rights Reserved</p>
+        </footer>
+    </div>
+</section>
+
+</html>
